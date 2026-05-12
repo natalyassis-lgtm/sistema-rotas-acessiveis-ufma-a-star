@@ -86,6 +86,8 @@ peso final = distância + penalidade
 
 ## Exemplos de Penalidades
 
+## Exemplos de penalidades
+
 | Condição | Penalidade |
 |---|---|
 | Acessível | 0 |
