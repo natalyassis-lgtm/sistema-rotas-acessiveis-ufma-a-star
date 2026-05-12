@@ -9,6 +9,7 @@ O objetivo do sistema é encontrar a melhor rota entre dois pontos do campus con
 O projeto simula um sistema de navegação acessível para estudantes, servidores e visitantes com mobilidade reduzida.
 
 ---
+
 ## Tecnologias Utilizadas
 
 - Python
@@ -24,7 +25,10 @@ O projeto simula um sistema de navegação acessível para estudantes, servidore
 pip install -r requirements.txt
 python main.py
 ```
-# Objetivos
+
+---
+
+## Objetivos
 
 - Modelar um problema de busca como grafo;
 - Implementar o algoritmo A*;
@@ -35,11 +39,11 @@ python main.py
 
 ---
 
-# Modelagem do Problema
+## Modelagem do Problema
 
 O campus da UFMA foi representado como um grafo.
 
-## Nós
+### Nós
 
 Os nós representam locais importantes da universidade:
 
@@ -54,7 +58,7 @@ Os nós representam locais importantes da universidade:
 - CCSO
 - NTI
 
-## Arestas
+### Arestas
 
 As arestas representam os caminhos entre os locais.
 
@@ -64,9 +68,10 @@ Cada aresta possui:
 - condição de acessibilidade;
 - penalidade;
 - peso final.
+
 ---
 
-# Função de Custo
+## Função de Custo
 
 O custo das rotas é calculado da seguinte forma:
 
@@ -74,14 +79,16 @@ O custo das rotas é calculado da seguinte forma:
 peso final = distância + penalidade
 ```
 
-## Exemplos de penalidades
+### Exemplos de Penalidades
 
 | Condição | Penalidade |
-|---|---|
+| --- | --- |
 | Acessível | 0 |
 | Piso irregular | 80 |
 | Caminho estreito | 180 |
 | Escada | 500 |
+
+---
 
 ## Algoritmo A*
 
@@ -99,11 +106,15 @@ Onde:
 - h(n): heurística baseada na distância em linha reta até o destino;
 - f(n): custo total estimado.
 
+---
+
 ## Heurística
 
 A heurística utilizada calcula a distância euclidiana entre os pontos do grafo.
 
 Ela ajuda o algoritmo a encontrar caminhos mais eficientes.
+
+---
 
 ## Funcionalidades do Sistema
 
@@ -114,6 +125,8 @@ Ela ajuda o algoritmo a encontrar caminhos mais eficientes.
 - Exibição detalhada dos trechos;
 - Visualização gráfica do grafo;
 - Exportação automática da imagem da rota.
+
+---
 
 ## Visualização Gráfica
 
@@ -133,6 +146,6 @@ O sistema gera automaticamente uma imagem contendo:
 
 ---
 
-# Exemplo Visual do Sistema
+## Exemplo Visual do Sistema
 
 ![Grafo do sistema](grafo_rota_acessivel.png)
