@@ -7,9 +7,22 @@ Este projeto implementa um sistema inteligente de busca de rotas acessíveis den
 O objetivo do sistema é encontrar a melhor rota entre dois pontos do campus considerando não apenas a menor distância, mas também fatores de acessibilidade, como presença de escadas, pisos irregulares, baixa iluminação e caminhos estreitos.
 
 O projeto simula um sistema de navegação acessível para estudantes, servidores e visitantes com mobilidade reduzida.
+---
+## Tecnologias Utilizadas
+
+- Python
+- NetworkX
+- Matplotlib
+- Algoritmo A*
 
 ---
 
+## Como Executar
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
 # Objetivos
 
 - Modelar um problema de busca como grafo;
