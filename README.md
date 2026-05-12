@@ -7,9 +7,7 @@ Este projeto implementa um sistema inteligente de busca de rotas acessíveis den
 O objetivo do sistema é encontrar a melhor rota entre dois pontos do campus considerando não apenas a menor distância, mas também fatores de acessibilidade, como presença de escadas, pisos irregulares, baixa iluminação e caminhos estreitos.
 
 O projeto simula um sistema de navegação acessível para estudantes, servidores e visitantes com mobilidade reduzida.
-## Exemplo Visual do Sistema
 
-![Grafo do sistema](grafo_rota_acessivel.png)
 ---
 ## Tecnologias Utilizadas
 
@@ -34,14 +32,6 @@ python main.py
 - Simular rotas acessíveis dentro da UFMA;
 - Analisar o impacto da acessibilidade no custo das rotas;
 - Demonstrar visualmente o funcionamento da busca.
-
----
-
-# Tecnologias Utilizadas
-
-- Python
-- NetworkX
-- Matplotlib
 
 ---
 
@@ -83,8 +73,6 @@ O custo das rotas é calculado da seguinte forma:
 ```text
 peso final = distância + penalidade
 ```
-
-## Exemplos de Penalidades
 
 ## Exemplos de penalidades
 
